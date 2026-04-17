@@ -29,6 +29,12 @@ You are the Architect. For each specialized task, read the relevant agent file a
 
 ---
 
+## Shared principle: detect before asking
+
+Before any agent asks the user a question, check whether the answer is already available from the environment — `git remote get-url origin`, files on disk, `gh auth status`, the existing `website/brief.md`, etc. Parse it, confirm with a short "I see X — correct?" if needed, and only fall back to asking when nothing can be inferred. Redundant questions break trust.
+
+---
+
 ## File layout
 
 ```
