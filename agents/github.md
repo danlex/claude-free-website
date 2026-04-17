@@ -15,8 +15,15 @@ If `gh` is not installed, tell the user:
 If not authenticated: run `gh auth login` and follow the browser flow.
 
 ## Step 1 — Get the repo name
-Ask the user what they named their repo when they created it from the template.
-The repo name appears in their site URL: `https://<username>.github.io/<repo-name>`
+
+**Auto-detect first.** Run:
+```
+git remote get-url origin 2>/dev/null
+```
+
+If it returns a GitHub URL, parse `<username>` and `<repo-name>` from it and confirm once with the user. Do **not** ask questions whose answers are already in the remote.
+
+Only if no GitHub remote is configured, ask the user what they named their repo when they created it from the template. The repo name appears in their site URL: `https://<username>.github.io/<repo-name>`
 
 ## Step 2 — Publish the site files
 

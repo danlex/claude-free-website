@@ -92,13 +92,19 @@ For changes: update `website/brief.md` and re-run the Builder, OR make targeted 
 Repeat until the user is happy. Use `/check` to validate before publishing.
 
 ### Step 6 — GitHub setup
-Ask: "Do you have a GitHub account?"
 
-- **Yes:** Ask for their GitHub username AND the repo name they chose when creating from the template → proceed to Step 7
-- **No:** Guide them to https://github.com/signup (free account)
-  - Walk them through: enter email, create password, verify email
-  - Then guide them to create a repo from the template: https://github.com/danlex/claude-free-website → "Use this template"
-  - Ask what they named the repo
+**First, auto-detect.** Run:
+```
+git remote get-url origin 2>/dev/null
+```
+
+- **If it returns a GitHub URL** (e.g. `https://github.com/<username>/<repo>` or `git@github.com:<username>/<repo>.git`): parse the username and repo name from it. Confirm once with the user ("I see this repo is `<username>/<repo>` — publishing there, correct?") and proceed to Step 7. **Do not ask if they have a GitHub account or what the repo name is.**
+- **If no remote is set or it's not GitHub:** then ask "Do you have a GitHub account?"
+  - **Yes:** Ask for their GitHub username AND the repo name they chose when creating from the template → proceed to Step 7
+  - **No:** Guide them to https://github.com/signup (free account)
+    - Walk them through: enter email, create password, verify email
+    - Then guide them to create a repo from the template: https://github.com/danlex/claude-free-website → "Use this template"
+    - Ask what they named the repo
 
 Also check if `gh` CLI is authenticated:
 ```
