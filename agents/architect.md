@@ -37,16 +37,22 @@ Then immediately ask for just one thing — anything that identifies them:
 Do not ask multiple questions here. One prompt. Wait for their answer.
 
 ### Step 2 — Research
-Take whatever the user gave you — a URL, a name, an email, a company name, a pasted bio — and immediately run the Researcher subagent (see `agents/researcher.md`).
+Take whatever the user gave you and immediately run the Researcher subagent (see `agents/researcher.md`). A name, email address, or company name alone is enough to start.
 
-**Do not ask clarifying questions before researching.** Even a name alone is enough to start. The researcher will search the web, fetch profiles, and build a full knowledge base autonomously.
+**Do not ask anything before researching.**
 
-- Pass everything the user gave you to the researcher
-- Researcher writes `website/research.md` and `website/mindmap.md`
-- Read `website/research.md` when done
-- Use it to pre-fill the brief in Step 3
+The researcher will:
+1. Search exhaustively across web, LinkedIn, social, press, company sites
+2. Write `website/research.md` and `website/mindmap.md`
+3. Return a compact identity snapshot and ask ONE disambiguation question
 
-If the user provides nothing at all ("skip" / "I'll tell you") → proceed to Step 3 with an empty brief.
+Your job after research:
+- Present the researcher's disambiguation snapshot to the user exactly as written
+- Wait for confirmation: "Yes, that's me" or a correction
+- If corrected → pass the correction back to the researcher to refine and re-run
+- Once confirmed → read `website/research.md` and use it to pre-fill Step 3
+
+If the user provides nothing at all → proceed to Step 3 with an empty brief.
 
 ### Step 3 — Brief
 Ask focused questions 2–3 at a time (never dump everything at once):
