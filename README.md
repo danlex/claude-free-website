@@ -105,7 +105,7 @@ claude
 
 Claude greets you immediately as your **Website Architect**:
 
-![Architect greeting](docs/screenshots/05-architect-greeting.png)
+![Architect greeting](media/05-architect-greeting.png)
 
 ```
 👋 Welcome! I'm your Website Architect.
@@ -150,7 +150,7 @@ A few things I couldn't find — I'll ask you about them shortly.
 
 > **Tip:** The more you share, the better your site content will be.
 
-![Research step](docs/screenshots/06-research.png)
+![Research step](media/06-research.png)
 
 ---
 
@@ -221,7 +221,7 @@ https://YOUR_USERNAME.github.io/claude-free-website
 
 GitHub Pages takes **1–2 minutes** to build. Then your site is live, forever, for free.
 
-![Live site](docs/screenshots/10-live.png)
+![Live site](media/10-live.png)
 
 ---
 
@@ -256,7 +256,7 @@ Log in to wherever you bought your domain (Namecheap, Google Domains, GoDaddy, e
 3. Wait ~10 minutes for DNS to propagate
 4. Check **Enforce HTTPS** when it appears
 
-![GitHub Pages settings](docs/screenshots/11-github-pages.png)
+![GitHub Pages settings](media/11-github-pages.png)
 
 
 ---
@@ -335,7 +335,7 @@ Delivered onsite anywhere in Romania or remotely.
 
 [Book a free 30-minute consultation →](https://academy.tvl.tech/en/)
 
-![TVL Academy](docs/screenshots/tvl-academy.png)
+![TVL Academy](media/tvl-academy.png)
 
 ---
 
