@@ -147,9 +147,9 @@ Knowledge base saved to website/research.md
 A few things I couldn't find — I'll ask you about them shortly.
 ```
 
-![Research step](docs/screenshots/06-research.png)
-
 > **Tip:** The more you share, the better your site content will be.
+
+![Research step](docs/screenshots/06-research.png)
 
 ---
 
@@ -205,9 +205,9 @@ Tell Claude: **"I'm ready to publish"**
 
 Claude will:
 1. Run final validation checks
-2. Create a repository on GitHub
-3. Push your website files
-4. Enable GitHub Pages
+2. Copy your site files to the `docs/` folder
+3. Push to your GitHub fork
+4. Enable GitHub Pages on your fork
 
 
 ---
@@ -215,7 +215,7 @@ Claude will:
 ## Step 10 — Your site is live!
 
 ```
-https://github.com/danlex/claude-free-website
+https://YOUR_USERNAME.github.io/claude-free-website
 ```
 
 GitHub Pages takes **1–2 minutes** to build. Then your site is live, forever, for free.

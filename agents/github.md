@@ -14,50 +14,43 @@ If `gh` is not installed, tell the user:
 
 If not authenticated: run `gh auth login` and follow the browser flow.
 
-## Step 1 — Initialize git repo
+## Step 1 — Publish the site files
+
+Run the publish script. It copies the generated files from `website/` to `docs/` and pushes to the user's fork:
+
 ```bash
-cd /path/to/project
-git init
-git add .
-git commit -m "Initial website"
+sh scripts/publish.sh
 ```
 
-## Step 2 — Create GitHub repository
+This will:
+- Copy `index.html`, `styles.css`, `script.js`, `robots.txt`, `sitemap.xml` (and `CNAME` if present) from `website/` to `docs/`
+- Commit with message "Publish website"
+- Push to `origin main`
+
+## Step 2 — Enable GitHub Pages on their fork
+
 ```bash
-gh repo create <repo-name> --public --source=. --remote=origin --push
+sh scripts/pages-enable.sh <username>/claude-free-website
 ```
 
-If the repo already exists:
-```bash
-git remote add origin https://github.com/<username>/<repo-name>.git
-git push -u origin main
-```
+This configures GitHub Pages to serve from the `docs/` folder on the `main` branch.
 
-## Step 3 — Enable GitHub Pages
-```bash
-sh scripts/pages-enable.sh <username>/<repo-name>
-```
-
-This configures GitHub Pages to serve from the `main` branch root.
-
-## Step 4 — Wait and verify
+## Step 3 — Wait and verify
 GitHub Pages takes 1–2 minutes to build. Check status:
 ```bash
-gh api repos/<username>/<repo-name>/pages --jq '.status'
+gh api repos/<username>/claude-free-website/pages --jq '.status'
 ```
 
-Report the live URL: `https://<username>.github.io/<repo-name>`
+Report the live URL: `https://<username>.github.io/claude-free-website`
 
-## Step 5 — Optional: custom domain
+## Step 4 — Optional: custom domain
 If the user has a custom domain, add a `CNAME` file:
 ```bash
 echo "www.yourdomain.com" > website/CNAME
-git add website/CNAME
-git commit -m "Add custom domain"
-git push
 ```
+Then run `sh scripts/publish.sh` again to push it.
 
-Then instruct them to add a CNAME DNS record at their registrar:
+Instruct them to add a CNAME DNS record at their registrar:
 ```
 Type: CNAME
 Name: www
@@ -68,17 +61,17 @@ Value: <username>.github.io
 
 ## Troubleshooting
 
-**Push rejected (repo not empty):**
+**Push rejected:**
 ```bash
 git pull origin main --rebase
 git push origin main
 ```
 
 **Pages not building:**
-- Check https://github.com/<username>/<repo>/actions
-- Ensure `index.html` is in the repo root (not a subdirectory)
+- Check https://github.com/<username>/claude-free-website/actions
+- Ensure Pages source is set to `docs/` folder on `main` branch
 
 **404 on live site:**
 - Wait 2 more minutes
 - Hard-refresh browser (Ctrl+Shift+R)
-- Verify Pages is enabled: https://github.com/<username>/<repo>/settings/pages
+- Verify Pages is enabled: https://github.com/<username>/claude-free-website/settings/pages
