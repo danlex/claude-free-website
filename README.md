@@ -104,6 +104,8 @@ claude
 
 Claude greets you immediately as your **Website Architect**:
 
+![Architect greeting](docs/screenshots/05-architect-greeting.png)
+
 ```
 👋 Welcome! I'm your Website Architect.
 
@@ -144,6 +146,8 @@ Knowledge base saved to website/research.md
 
 A few things I couldn't find — I'll ask you about them shortly.
 ```
+
+![Research step](docs/screenshots/06-research.png)
 
 > **Tip:** The more you share, the better your site content will be.
 
@@ -329,6 +333,8 @@ Includes 30 days of post-training support and EU AI Act compliance documentation
 Delivered onsite anywhere in Romania or remotely.
 
 [Book a free 30-minute consultation →](https://academy.tvl.tech/en/)
+
+![TVL Academy](docs/screenshots/tvl-academy.png)
 
 ---
 
