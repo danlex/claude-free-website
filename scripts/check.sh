@@ -17,7 +17,7 @@ else
   err "website/index.html not found — run /build first"
 fi
 
-for p in "Your Name Here" "your@email.com" "Your Company Name" "TODO" "PLACEHOLDER" "Lorem ipsum"; do
+for p in "Your Name Here" "your@email.com" "Your Company Name" "TODO" "PLACEHOLDER" "Lorem ipsum" "YOUR_FORM_ID" "YOUR_NAME" "yourname"; do
   if grep -ril "$p" "$WEBSITE/" --include="*.html" --include="*.css" 2>/dev/null | grep -q .; then
     warn "Found placeholder text: \"$p\""
   fi
