@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Doe — Designer & Developer</title>
+  <meta name="description" content="Portfolio of Jane Doe — UX designer and front-end developer based in New York.">
+  <meta property="og:title" content="Jane Doe — Designer & Developer">
+  <meta property="og:description" content="Portfolio of Jane Doe — UX designer and front-end developer.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="/" class="logo">Jane Doe</a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn btn-primary btn-sm">Hire Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero-eyebrow">Available for new projects</p>
+        <h1>I Design &amp;<br>Build Experiences<br>People Love</h1>
+        <p class="hero-subtitle">
+          UX designer and front-end developer with 5 years of experience
+          crafting products for startups and agencies.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary btn-lg">See My Work</a>
+          <a href="#contact" class="btn btn-ghost btn-lg">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Projects -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Selected Work</h2>
+          <p>Projects I'm proud of.</p>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="image-placeholder">Project Screenshot</div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">UX Design</span>
+                <span class="tag">React</span>
+              </div>
+              <h3>Project Title One</h3>
+              <p>Brief description of what this project was, the challenge you solved, and the outcome. Keep it to 2–3 sentences.</p>
+              <a href="#" class="project-link">View Case Study →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="image-placeholder">Project Screenshot</div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Branding</span>
+                <span class="tag">Figma</span>
+              </div>
+              <h3>Project Title Two</h3>
+              <p>Brief description of what this project was, the challenge you solved, and the outcome. Keep it to 2–3 sentences.</p>
+              <a href="#" class="project-link">View Case Study →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="image-placeholder">Project Screenshot</div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Full Stack</span>
+                <span class="tag">TypeScript</span>
+              </div>
+              <h3>Project Title Three</h3>
+              <p>Brief description of what this project was, the challenge you solved, and the outcome. Keep it to 2–3 sentences.</p>
+              <a href="#" class="project-link">View on GitHub →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>What I Do</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item reveal">
+            <div class="skill-icon">🎨</div>
+            <h3>UI / UX Design</h3>
+            <p>User research, wireframes, prototypes, and polished high-fidelity designs in Figma.</p>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-icon">💻</div>
+            <h3>Front-End Dev</h3>
+            <p>React, TypeScript, CSS — I turn designs into pixel-perfect, performant interfaces.</p>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Every project works beautifully on any device, from phone to ultrawide monitor.</p>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-icon">🚀</div>
+            <h3>Performance</h3>
+            <p>Web vitals, accessibility, SEO — I care about the details that make a site great.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <div class="image-placeholder portrait">Your Photo</div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-eyebrow">About Me</p>
+          <h2>Nice to Meet You</h2>
+          <p>
+            Write a few sentences about yourself here. Where are you based?
+            What kind of work do you love? What are you passionate about?
+          </p>
+          <p>
+            Add any fun personal details — hobbies, background, what you're
+            currently learning or excited about.
+          </p>
+          <div class="about-links">
+            <a href="mailto:hello@example.com" class="btn btn-primary">Email Me</a>
+            <a href="https://linkedin.com/in/yourhandle" class="btn btn-ghost">LinkedIn</a>
+            <a href="https://github.com/yourhandle" class="btn btn-ghost">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-content">
+        <div class="section-header">
+          <h2>Let's Work Together</h2>
+          <p>Have a project in mind? I'd love to hear about it.</p>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <input type="text" name="subject" placeholder="Project type (design, development, both...)">
+          <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="/" class="logo footer-logo">Jane Doe</a>
+      <p>&copy; 2024 Jane Doe. Designed &amp; built by me.</p>
+      <div class="footer-links">
+        <a href="https://twitter.com/yourhandle">Twitter</a>
+        <a href="https://github.com/yourhandle">GitHub</a>
+        <a href="https://linkedin.com/in/yourhandle">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
