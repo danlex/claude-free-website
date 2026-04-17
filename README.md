@@ -216,6 +216,8 @@ https://github.com/danlex/claude-free-website
 
 GitHub Pages takes **1–2 minutes** to build. Then your site is live, forever, for free.
 
+![Live site](docs/screenshots/10-live.png)
+
 ---
 
 ## Optional: Connect a custom domain
@@ -248,6 +250,8 @@ Log in to wherever you bought your domain (Namecheap, Google Domains, GoDaddy, e
 2. Under **Custom domain**, enter your domain and click **Save**
 3. Wait ~10 minutes for DNS to propagate
 4. Check **Enforce HTTPS** when it appears
+
+![GitHub Pages settings](docs/screenshots/11-github-pages.png)
 
 
 ---
