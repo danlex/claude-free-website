@@ -206,8 +206,8 @@ Tell Claude: **"I'm ready to publish"**
 
 Claude will:
 1. Run final validation checks
-2. Copy your site files to the `docs/` folder
-3. Push to your GitHub fork
+2. Copy your site files from `website/` → `docs/` (GitHub Pages reads from here)
+3. Commit and push `docs/` to your GitHub fork
 4. Enable GitHub Pages on your fork
 
 
