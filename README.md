@@ -93,7 +93,6 @@ cd claude-free-website
 
 Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
 
-![Fork and clone screenshot](docs/screenshots/04-fork-clone.png)
 
 ---
 
@@ -217,8 +216,6 @@ https://github.com/danlex/claude-free-website
 
 GitHub Pages takes **1–2 minutes** to build. Then your site is live, forever, for free.
 
-![GitHub Pages live](docs/screenshots/11-github-pages.png)
-
 ---
 
 ## Optional: Connect a custom domain
@@ -252,7 +249,6 @@ Log in to wherever you bought your domain (Namecheap, Google Domains, GoDaddy, e
 3. Wait ~10 minutes for DNS to propagate
 4. Check **Enforce HTTPS** when it appears
 
-![GitHub Pages settings](docs/screenshots/11-github-pages.png)
 
 ---
 
