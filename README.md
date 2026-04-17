@@ -2,7 +2,7 @@
 
 Build a real, live website for free in ~15 minutes. No coding required.
 
-**Result:** Your website live at `https://yourusername.github.io/my-site`
+**Result:** Your website live at `https://github.com/danlex/claude-free-website`
 
 ---
 
@@ -174,7 +174,7 @@ Claude will:
 ## Step 10 — Your site is live!
 
 ```
-https://yourusername.github.io/my-site
+https://github.com/danlex/claude-free-website
 ```
 
 GitHub Pages takes **1–2 minutes** to build. Then your site is live, forever, for free.
