@@ -130,6 +130,8 @@ ul { list-style: none; }
 
 .tvl-logo { width: 28px; height: 28px; flex-shrink: 0; }
 .tvl-logo-lg { width: 44px; height: 44px; }
+.floatnav-logo-img { height: 40px; width: auto; display: block; filter: brightness(0) invert(1); }
+.footer-logo-img { height: 44px; width: auto; display: block; filter: brightness(0) invert(1); }
 
 .floatnav-links { display: flex; gap: 1.25rem; }
 .floatnav-links a {
