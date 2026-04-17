@@ -1,0 +1,5 @@
+# Generated site files — never commit from the template.
+# publish.sh populates this folder; each user's fork owns its own docs/.
+*
+!.gitkeep
+!.gitignore
