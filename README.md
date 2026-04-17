@@ -24,7 +24,6 @@ Build a real, live website for free in ~15 minutes. No coding required.
 4. Choose a username — this will appear in your site URL
 5. Verify your email address (check your inbox)
 
-![GitHub signup screenshot](docs/screenshots/01-github-signup.png)
 
 ---
 
@@ -44,7 +43,6 @@ claude login
 
 A browser window will open — sign in or create a free account at [claude.ai](https://claude.ai).
 
-![Claude login screenshot](docs/screenshots/02-claude-login.png)
 
 ---
 
@@ -75,7 +73,6 @@ gh auth login
 - Choose **Login with a web browser**
 - Press Enter — a browser opens, click **Authorize**
 
-![GitHub CLI auth screenshot](docs/screenshots/03-gh-auth.png)
 
 ---
 
@@ -106,40 +103,79 @@ Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
 claude
 ```
 
-Claude will greet you as your **Website Architect** — ready to guide you.
+Claude greets you immediately as your **Website Architect**:
 
-![Claude Code greeting screenshot](docs/screenshots/05-claude-start.png)
+```
+👋 Welcome! I'm your Website Architect.
+
+I'll guide you through building a real, live website — completely free.
+No coding required. The whole process takes about 15 minutes.
+
+Here's what I can build for you:
+  • Landing page  • Portfolio  • Personal / bio  • Blog  • Company site
+
+And here's what I can't do (so we don't waste your time):
+  ✗ User logins or accounts
+  ✗ E-commerce or payments
+  ✗ Anything needing a database
+
+Ready? Let's start with your background.
+Do you have a website, LinkedIn profile, or any documents I can research?
+(Or just tell me about yourself in a few sentences.)
+```
 
 ---
 
 ## Step 6 — Share your background (optional)
 
-Claude will ask if you have URLs or documents to share.
+Paste a URL or describe yourself. Claude researches everything and writes real content — no Lorem Ipsum, no placeholders.
 
-You can give it:
-- Your LinkedIn profile URL
-- Your existing website
-- A text bio or CV (just paste it in)
+```
+You: Here's my site: https://example.com and my LinkedIn: linkedin.com/in/yourname
 
-Claude researches everything and uses it to write real content for your site — no Lorem Ipsum, no placeholders.
+Claude: Researching your background now...
+
+✓ Found: Senior product designer at Acme Corp (2019–present)
+✓ Found: Previously at Google and Shopify
+✓ Found: Portfolio projects — Acme rebrand, Shopify Checkout redesign
+✓ Found: Based in Toronto, Canada
+✓ Contact: hello@yourname.com
+
+Knowledge base saved to website/research.md
+
+A few things I couldn't find — I'll ask you about them shortly.
+```
 
 > **Tip:** The more you share, the better your site content will be.
-
-![Research step screenshot](docs/screenshots/06-research.png)
 
 ---
 
 ## Step 7 — Answer the questions
 
-Claude will ask:
-- What type of site? *(landing page, portfolio, personal, blog, company)*
-- What's it for? *(your name or company, what you do)*
-- What sections? *(Claude suggests sensible defaults)*
-- Color vibe? *(minimal / bold / warm / professional / creative)*
+Claude asks a short set of questions, then builds without further input:
 
-Just answer in plain English. There are no right or wrong answers.
+```
+Claude: Quick questions before I build:
 
-![Questions screenshot](docs/screenshots/07-questions.png)
+1. What type of site?
+   → landing page / portfolio / personal / blog / company
+
+2. What's the main goal?
+   → get clients / show my work / share ideas / promote a product
+
+3. Any color preference?
+   → minimal (white+black) / bold (dark+vivid) / warm / professional / creative
+
+You: Portfolio, get clients, minimal
+
+Claude: Got it. Building your site now...
+
+✓ Generated website/index.html  (47 sections, real content throughout)
+✓ Generated website/styles.css  (mobile-first, custom properties)
+✓ Generated website/script.js   (scroll animations)
+
+Starting preview server at http://localhost:8000
+```
 
 ---
 
@@ -153,7 +189,7 @@ Open http://localhost:8000 in your browser
 
 You'll see your real, complete website. If you want changes, just say so — Claude will update it immediately.
 
-![Preview screenshot](docs/screenshots/08-preview.png)
+![The Free Web live preview](docs/screenshots/10-live.png)
 
 ---
 
@@ -167,7 +203,6 @@ Claude will:
 3. Push your website files
 4. Enable GitHub Pages
 
-![Publishing screenshot](docs/screenshots/09-publishing.png)
 
 ---
 
