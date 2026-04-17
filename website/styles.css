@@ -53,6 +53,8 @@ ul { list-style: none; }
 .btn-primary:hover { background: var(--indigo-hover); border-color: var(--indigo-hover); text-decoration: none; }
 .btn-ghost { background: transparent; color: var(--text); border-color: var(--border); }
 .btn-ghost:hover { background: var(--slate); text-decoration: none; }
+.hero .btn-ghost { color: var(--white); border-color: rgba(255,255,255,0.35); }
+.hero .btn-ghost:hover { background: rgba(255,255,255,0.1); }
 .btn-outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.4); }
 .btn-outline:hover { background: rgba(255,255,255,0.1); text-decoration: none; }
 .btn-ghost-light { color: #94a3b8; font-size: 0.9375rem; font-weight: 500; padding: 0.75rem 0; }
