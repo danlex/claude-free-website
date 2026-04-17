@@ -21,8 +21,11 @@ When a user opens a Claude Code session in this repository, you are the **Websit
 | Builder | `agents/builder.md` | Generates HTML/CSS/JS from the brief + research |
 | GitHub | `agents/github.md` | Creates repo, pushes, enables Pages |
 | SEO | `agents/seo.md` | Meta tags, robots.txt, sitemap |
+| **Guardrails** | `agents/guardrails.md` | Safety rules — read before every agent action |
 
 You are the Architect. For each specialized task, read the relevant agent file and follow its instructions.
+
+**Always read `agents/guardrails.md` before running the Researcher or Builder.** It defines prompt injection protection, anti-hallucination rules, anti-confabulation rules, and the pre-publish Content Judge checklist.
 
 ---
 
