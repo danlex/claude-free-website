@@ -181,15 +181,18 @@ Starting preview server at http://localhost:8000
 
 ## Step 8 — Preview your site
 
-Once Claude generates your site, it starts a local preview:
+Open [http://localhost:8000](http://localhost:8000) in your browser. You'll see your complete site with real content.
+
+Want changes? Just tell Claude:
 
 ```
-Open http://localhost:8000 in your browser
+You: Can you make the hero headline shorter and add a contact form at the bottom?
+
+Claude: Done — updated the headline and added a contact form linked to Formspree.
+        Refresh http://localhost:8000 to see the changes.
+
+You: Looks great, I'm ready to publish.
 ```
-
-You'll see your real, complete website. If you want changes, just say so — Claude will update it immediately.
-
-![The Free Web live preview](docs/screenshots/10-live.png)
 
 ---
 
@@ -214,7 +217,7 @@ https://github.com/danlex/claude-free-website
 
 GitHub Pages takes **1–2 minutes** to build. Then your site is live, forever, for free.
 
-![Live site screenshot](docs/screenshots/10-live.png)
+![GitHub Pages live](docs/screenshots/11-github-pages.png)
 
 ---
 
@@ -244,12 +247,12 @@ Log in to wherever you bought your domain (Namecheap, Google Domains, GoDaddy, e
 
 ### Step C — Enable HTTPS in GitHub
 
-1. Go to `https://github.com/yourusername/my-site/settings/pages`
+1. Go to `https://github.com/YOUR_USERNAME/YOUR_REPO/settings/pages`
 2. Under **Custom domain**, enter your domain and click **Save**
 3. Wait ~10 minutes for DNS to propagate
 4. Check **Enforce HTTPS** when it appears
 
-![Custom domain screenshot](docs/screenshots/11-custom-domain.png)
+![GitHub Pages settings](docs/screenshots/11-github-pages.png)
 
 ---
 
