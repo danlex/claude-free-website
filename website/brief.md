@@ -7,10 +7,10 @@ Landing page
 Explain and promote The Free Web — a free, open-source system by TVL Technology that lets anyone build a website using Claude AI and GitHub Pages.
 
 ## Primary CTA
-"Get Started Free" → links to the GitHub repo (https://github.com/tvl-tech/free-website)
+"Get Started Free" → links to the GitHub repo (https://github.com/danlex/claude-free-website)
 
 ## Secondary CTA
-"See the Docs" → links to QUICKSTART.md or GitHub README
+"TVL Academy" → https://academy.tvl.tech
 
 ## Sections
 1. **Hero** — bold dark background, headline, subheadline, two CTAs, "takes 15 minutes" hook
