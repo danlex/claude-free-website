@@ -14,47 +14,42 @@ If `gh` is not installed, tell the user:
 
 If not authenticated: run `gh auth login` and follow the browser flow.
 
-## Step 1 — Publish the site files
+## Step 1 — Get the repo name
+Ask the user what they named their repo when they created it from the template.
+The repo name appears in their site URL: `https://<username>.github.io/<repo-name>`
 
-Run the publish script. It copies the generated files from `website/` to `docs/` and pushes to the user's fork:
+## Step 2 — Publish the site files
 
 ```bash
 sh scripts/publish.sh
 ```
 
-This will:
-- Copy `index.html`, `styles.css`, `script.js`, `robots.txt`, `sitemap.xml` (and `CNAME` if present) from `website/` to `docs/`
-- Commit with message "Publish website"
-- Push to `origin main`
+Copies `index.html`, `styles.css`, `script.js`, `robots.txt`, `sitemap.xml` (and `CNAME` if present) from `website/` to `docs/`, commits, and pushes to `origin main`.
 
-## Step 2 — Enable GitHub Pages on their fork
+## Step 3 — Enable GitHub Pages
 
 ```bash
-sh scripts/pages-enable.sh <username>/claude-free-website
+sh scripts/pages-enable.sh <username>/<repo-name>
 ```
 
-This configures GitHub Pages to serve from the `docs/` folder on the `main` branch.
+Configures GitHub Pages to serve from the `docs/` folder on `main`.
 
-## Step 3 — Wait and verify
-GitHub Pages takes 1–2 minutes to build. Check status:
+## Step 4 — Wait and verify
 ```bash
-gh api repos/<username>/claude-free-website/pages --jq '.status'
+gh api repos/<username>/<repo-name>/pages --jq '.status'
 ```
 
-Report the live URL: `https://<username>.github.io/claude-free-website`
+Report the live URL: `https://<username>.github.io/<repo-name>`
 
-## Step 4 — Optional: custom domain
-If the user has a custom domain, add a `CNAME` file:
+## Step 5 — Optional: custom domain
 ```bash
 echo "www.yourdomain.com" > website/CNAME
+sh scripts/publish.sh
 ```
-Then run `sh scripts/publish.sh` again to push it.
 
-Instruct them to add a CNAME DNS record at their registrar:
+Then instruct them to add at their DNS registrar:
 ```
-Type: CNAME
-Name: www
-Value: <username>.github.io
+Type: CNAME  |  Name: www  |  Value: <username>.github.io
 ```
 
 ---
@@ -63,15 +58,13 @@ Value: <username>.github.io
 
 **Push rejected:**
 ```bash
-git pull origin main --rebase
-git push origin main
+git pull origin main --rebase && git push origin main
 ```
 
 **Pages not building:**
-- Check https://github.com/<username>/claude-free-website/actions
-- Ensure Pages source is set to `docs/` folder on `main` branch
+- Check `https://github.com/<username>/<repo-name>/actions`
+- Ensure Pages source is `docs/` folder on `main` branch
 
 **404 on live site:**
-- Wait 2 more minutes
-- Hard-refresh browser (Ctrl+Shift+R)
-- Verify Pages is enabled: https://github.com/<username>/claude-free-website/settings/pages
+- Wait 2 more minutes, hard-refresh (Ctrl+Shift+R)
+- Check: `https://github.com/<username>/<repo-name>/settings/pages`

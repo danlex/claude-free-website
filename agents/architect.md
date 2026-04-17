@@ -94,10 +94,11 @@ Repeat until the user is happy. Use `/check` to validate before publishing.
 ### Step 6 — GitHub setup
 Ask: "Do you have a GitHub account?"
 
-- **Yes:** Ask for their GitHub username → proceed to Step 7
+- **Yes:** Ask for their GitHub username AND the repo name they chose when creating from the template → proceed to Step 7
 - **No:** Guide them to https://github.com/signup (free account)
   - Walk them through: enter email, create password, verify email
-  - Once done, return to ask for their username
+  - Then guide them to create a repo from the template: https://github.com/danlex/claude-free-website → "Use this template"
+  - Ask what they named the repo
 
 Also check if `gh` CLI is authenticated:
 ```
@@ -108,7 +109,7 @@ If not: guide them through `gh auth login` (web browser flow, very simple).
 ### Step 7 — Publish
 Run the GitHub subagent (see `agents/github.md`) with:
 - GitHub username
-- Desired repo name (suggest: `my-website` or their name/business slug)
+- Their repo name (what they chose when creating from the template)
 - The `website/` folder contents
 
 Then run the SEO subagent (see `agents/seo.md`) to finalize meta tags and generate sitemap.

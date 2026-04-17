@@ -2,7 +2,7 @@
 
 Build a real, live website for free in ~15 minutes. No coding required.
 
-**Result:** Your website live at `https://github.com/danlex/claude-free-website`
+**Result:** Your website live at `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME`
 
 ---
 
@@ -77,22 +77,24 @@ gh auth login
 
 ---
 
-## Step 4 — Fork & clone this repo
+## Step 4 — Create your copy & clone it
 
-**Fork first** (so you own a copy on GitHub):
+**Use this template** (gives you a clean repo with no connection to the original):
 
 1. Go to [github.com/danlex/claude-free-website](https://github.com/danlex/claude-free-website)
-2. Click the **Fork** button (top right)
-3. Click **Create fork**
+2. Click the green **Use this template** button (top right)
+3. Click **Create a new repository**
+4. Choose a name for your repo — this appears in your site URL (e.g. `my-website`, `alex-portfolio`)
+5. Leave it **Public**, click **Create repository**
 
-Then clone your fork:
+Then clone your new repo:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/claude-free-website.git
-cd claude-free-website
+git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
 ```
 
-Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
+> **Why "Use this template" instead of Fork?** A fork keeps a permanent link to the original — GitHub will always show "N commits behind" and syncing can overwrite your published site. A template gives you a clean, independent repo. No relationship, no conflicts, ever.
 
 
 ---
@@ -216,7 +218,7 @@ Claude will:
 ## Step 10 — Your site is live!
 
 ```
-https://YOUR_USERNAME.github.io/claude-free-website
+https://YOUR_USERNAME.github.io/YOUR_REPO_NAME
 ```
 
 GitHub Pages takes **1–2 minutes** to build. Then your site is live, forever, for free.
