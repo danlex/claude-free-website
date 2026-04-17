@@ -1,9 +1,11 @@
 Follow the researcher instructions in `agents/researcher.md`.
 
-Ask the user: "What URLs or documents should I research? You can share links (website, LinkedIn, GitHub) or paste any text (bio, CV, company description)."
+Ask the user for one thing only: "Share anything that identifies you — a name, URL, LinkedIn, company, or a short bio. I'll research the rest myself."
 
-After collecting inputs, research them thoroughly and write:
-- `website/research.md` — structured knowledge base
+Then immediately begin researching. Do not ask follow-up questions before starting. If a URL fails, try web search. If search finds a LinkedIn, fetch it. Exhaust every source before surfacing gaps.
+
+Write:
+- `website/research.md` — full structured knowledge base
 - `website/mindmap.md` — text mind map of all findings
 
-Then summarize the key findings for the user and ask if anything is missing or incorrect.
+Then present a concise summary of what was found and list only the questions that research genuinely could not answer.
