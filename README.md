@@ -105,7 +105,13 @@ cd YOUR_REPO_NAME
 claude
 ```
 
-Claude greets you immediately as your **Website Architect**:
+Then type `/architect` to start the guided flow:
+
+```
+/architect
+```
+
+Claude greets you as your **Website Architect**:
 
 ![Architect greeting](media/05-architect-greeting.png)
 
