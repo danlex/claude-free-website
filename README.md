@@ -11,6 +11,7 @@ Build a real, live website for free in ~15 minutes. No coding required.
 - A computer (Mac, Windows, or Linux)
 - A free [GitHub account](https://github.com/signup) — takes 2 minutes
 - [Node.js 18+](https://nodejs.org) — needed to run Claude Code
+- [Git](https://git-scm.com/downloads) — needed to clone and publish (pre-installed on Mac/Linux)
 
 ---
 

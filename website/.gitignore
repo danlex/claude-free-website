@@ -1,0 +1,5 @@
+# Generated files — never commit these to the template repo.
+# Each user's site content stays local; only docs/ is published.
+*
+!.gitkeep
+!.gitignore
