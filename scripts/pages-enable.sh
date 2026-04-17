@@ -15,7 +15,7 @@ if ! command -v gh &>/dev/null; then
   echo "GitHub CLI not found. Enable Pages manually:"
   echo "1. Go to https://github.com/$REPO/settings/pages"
   echo "2. Under Source, select 'Deploy from a branch'"
-  echo "3. Choose 'main' branch and '/ (root)'"
+  echo "3. Choose 'main' branch and '/docs'"
   echo "4. Click Save"
   exit 0
 fi
@@ -24,10 +24,10 @@ echo "Enabling GitHub Pages for $REPO..."
 
 gh api "repos/$REPO/pages" --method POST \
   -f "source[branch]=main" \
-  -f "source[path]=/" 2>/dev/null \
+  -f "source[path]=/docs" 2>/dev/null \
 || gh api "repos/$REPO/pages" --method PUT \
   -f "source[branch]=main" \
-  -f "source[path]=/" 2>/dev/null \
+  -f "source[path]=/docs" 2>/dev/null \
 || true
 
 echo ""
