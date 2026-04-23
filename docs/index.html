@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Free Web — Build a Free Website with AI | TVL Technology</title>
+  <meta name="description" content="Build a professional website for free using Claude AI and GitHub Pages. No coding. No hosting costs. No credit card. Live in 15 minutes." />
+  <meta property="og:title" content="The Free Web — Build a Free Website with AI" />
+  <meta property="og:description" content="Claude AI researches your background, writes your copy, and publishes your site. Zero coding. Zero cost." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thefreeweb.tvl.tech" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="https://cdn.prod.website-files.com/66ea9ae1813efc2b2adce14f/670ed1b040d236eeac89c531_a_logotip_principal_orange_1.png" type="image/png">
+</head>
+<body>
+
+  <!-- ===== Floating Bottom Navbar ===== -->
+  <nav class="floatnav" id="floatnav" aria-label="Main navigation">
+    <a href="#hero" class="floatnav-brand">
+      <img src="https://cdn.prod.website-files.com/66ea9ae1813efc2b2adce14f/67079e31e71560a787dd8b06_logo.svg" alt="TVL Technology" height="40" class="floatnav-logo-img">
+      <span>The Free Web</span>
+    </a>
+    <ul class="floatnav-links">
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#what-it-builds">What It Builds</a></li>
+      <li><a href="#built-by-tvl">About</a></li>
+    </ul>
+    <a href="https://github.com/danlex/claude-free-website" class="btn btn-orange btn-sm" target="_blank" rel="noopener">Get Started</a>
+    <button class="floatnav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section id="hero" class="hero">
+      <div class="geo geo-arch" aria-hidden="true">
+        <svg viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M180 340 A160 160 0 0 1 20 180 A160 160 0 0 1 180 20" stroke="white" stroke-width="1" opacity="0.15"/>
+          <path d="M180 290 A110 110 0 0 1 70 180 A110 110 0 0 1 180 70" stroke="white" stroke-width="1" opacity="0.1"/>
+          <rect x="20" y="20" width="80" height="80" stroke="white" stroke-width="1" opacity="0.12"/>
+          <rect x="40" y="40" width="40" height="40" stroke="white" stroke-width="1" opacity="0.08"/>
+        </svg>
+      </div>
+      <div class="geo geo-lines" aria-hidden="true">
+        <svg viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M320 20 L160 340" stroke="white" stroke-width="1" opacity="0.1"/>
+          <path d="M360 100 L140 340" stroke="white" stroke-width="1" opacity="0.08"/>
+          <rect x="200" y="40" width="100" height="100" stroke="white" stroke-width="1" opacity="0.1"/>
+          <path d="M260 20 L340 100 L260 180 L180 100 Z" stroke="white" stroke-width="1" opacity="0.07"/>
+          <path d="M280 200 L340 260 L280 320 L220 260 Z" stroke="white" stroke-width="1" opacity="0.06"/>
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>Open Source &middot; Free Forever
+        </div>
+        <h1 class="hero-headline">
+          YOUR WEBSITE,<br />
+          LIVE IN <span class="hero-time">15&nbsp;MIN</span>.<br />
+          FOR FREE.
+        </h1>
+        <p class="hero-subheadline">Claude AI researches your background, writes your copy, and publishes your site to GitHub Pages &mdash; no coding required.</p>
+        <div class="hero-pills">
+          <span>No coding</span>
+          <span>No hosting costs</span>
+          <span>No credit card</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="https://github.com/danlex/claude-free-website" class="btn btn-white" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            Get Started Free
+          </a>
+          <a href="https://academy.tvl.tech" class="btn btn-outline-white" target="_blank" rel="noopener">TVL Academy &rarr;</a>
+        </div>
+        <p class="hero-trust">Built on GitHub Pages &mdash; trusted by millions of developers worldwide</p>
+      </div>
+    </section>
+
+    <!-- ===== How It Works ===== -->
+    <section id="how-it-works" class="section section-light">
+      <div class="container">
+        <div class="section-label reveal">How It Works</div>
+        <h2 class="section-title reveal">FIVE STEPS FROM<br />ZERO TO LIVE</h2>
+        <p class="section-subtitle reveal">You answer questions. Claude does everything else.</p>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step-number">01</div>
+            <div class="step-body">
+              <h3>Install Claude Code &amp; clone the repo</h3>
+              <p>Download Claude Code (free), then clone the open-source Free Web repository to your machine. No other tools, runtimes, or accounts required.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step-number">02</div>
+            <div class="step-body">
+              <h3>Start Claude &mdash; it greets you as your Website Architect</h3>
+              <p>Open the project in Claude Code. The AI automatically introduces itself and walks you through a short guided conversation to understand what your site needs to accomplish.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step-number">03</div>
+            <div class="step-body">
+              <h3>Share your LinkedIn or website &mdash; Claude researches your background</h3>
+              <p>Optionally paste a URL or upload documents. The AI Researcher reads your background and builds a knowledge base so your site has real, accurate content &mdash; not Lorem Ipsum.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step-number">04</div>
+            <div class="step-body">
+              <h3>Claude builds your site and shows a live preview</h3>
+              <p>The AI Builder generates a complete, professional HTML/CSS/JS site. A local preview opens in your browser so you can review exactly what visitors will see before publishing.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step-number">05</div>
+            <div class="step-body">
+              <h3>Claude pushes to GitHub and enables Pages &mdash; you&rsquo;re live</h3>
+              <p>One command. Claude creates your GitHub repository, pushes the site, and enables GitHub Pages. Your site is live at a public URL &mdash; for free, forever.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section id="features" class="section section-dark">
+      <div class="container">
+        <div class="section-label reveal">Features</div>
+        <h2 class="section-title reveal">EVERYTHING INCLUDED.<br />NOTHING TO PAY FOR.</h2>
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-num">01</div>
+            <h3>AI Researcher</h3>
+            <p>Give Claude a LinkedIn profile, personal website, or documents. It extracts your story, skills, and offerings so every word on your site is real and specific to you.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-num">02</div>
+            <h3>AI Builder</h3>
+            <p>Claude generates a complete, beautiful static site &mdash; semantic HTML, responsive CSS, smooth animations &mdash; tailored to your brand. No templates to wrestle with.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-num">03</div>
+            <h3>Free Hosting</h3>
+            <p>Your site is published to GitHub Pages &mdash; zero monthly cost, global CDN, 99.9% uptime. Trusted by millions of developers from side projects to documentation.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-num">04</div>
+            <h3>Custom Domains</h3>
+            <p>Already own a domain? Claude walks you through connecting it to GitHub Pages. Point your DNS, add a CNAME file, and your custom domain is live &mdash; no gymnastics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== What It Builds ===== -->
+    <section id="what-it-builds" class="section section-light">
+      <div class="container">
+        <div class="section-label reveal">What It Builds</div>
+        <h2 class="section-title reveal">ANY STATIC SITE.<br />ANY PURPOSE.</h2>
+        <p class="section-subtitle reveal">Tell Claude what you need &mdash; it picks the right structure and writes the right copy.</p>
+        <div class="site-types-grid">
+          <div class="site-type reveal">
+            <div class="site-type-num">01</div>
+            <h3>Landing Page</h3>
+            <p>Hero, features, social proof, and a CTA. Perfect for products, SaaS tools, or campaigns.</p>
+          </div>
+          <div class="site-type reveal">
+            <div class="site-type-num">02</div>
+            <h3>Portfolio</h3>
+            <p>Project cards, skills grid, and a contact form. Show your work to clients and employers.</p>
+          </div>
+          <div class="site-type reveal">
+            <div class="site-type-num">03</div>
+            <h3>Personal / Bio</h3>
+            <p>Photo area, bio, social links, and highlights. Your personal brand, published in minutes.</p>
+          </div>
+          <div class="site-type reveal">
+            <div class="site-type-num">04</div>
+            <h3>Blog</h3>
+            <p>Clean post listing, author intro, and categories. Write once, share with the world.</p>
+          </div>
+          <div class="site-type reveal">
+            <div class="site-type-num">05</div>
+            <h3>Company Site</h3>
+            <p>Services, team, testimonials, and contact form. Everything a small business needs online.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Built by TVL ===== -->
+    <section id="built-by-tvl" class="section section-dark2">
+      <div class="container">
+        <div class="tvl-grid">
+          <div class="tvl-text reveal">
+            <div class="section-label">Built by TVL Technology</div>
+            <h2 class="section-title">REAL SOLUTIONS.<br />NO COMPROMISES.</h2>
+            <p>The Free Web is an open-source project by <strong>TVL Technology</strong> &mdash; a full-service software agency specializing in AI-driven innovation, blockchain infrastructure, and custom web development.</p>
+            <p>We built this because every small business, freelancer, and founder deserves a professional website &mdash; without paying thousands of dollars or waiting weeks for an agency to deliver.</p>
+            <p class="tvl-clients"><strong>Trusted by:</strong> Arcanna AI &middot; Ocean Enterprise &middot; EBSI &middot; Brainactive AI</p>
+            <div class="tvl-links">
+              <a href="https://tvl.tech" class="btn btn-orange" target="_blank" rel="noopener">Visit TVL.tech</a>
+              <a href="mailto:contact@tvl.technology" class="link-light">contact@tvl.technology</a>
+            </div>
+          </div>
+          <div class="tvl-badge-area reveal">
+            <div class="tvl-badge">
+              <div class="badge-row">
+                <div class="badge-icon">AI</div>
+                <div>
+                  <strong>Powered by Claude</strong>
+                  <span>Anthropic&rsquo;s world-class AI model</span>
+                </div>
+              </div>
+              <div class="badge-row">
+                <div class="badge-icon">GH</div>
+                <div>
+                  <strong>GitHub Pages</strong>
+                  <span>Trusted by millions of developers</span>
+                </div>
+              </div>
+              <div class="badge-row">
+                <div class="badge-icon">OS</div>
+                <div>
+                  <strong>Open Source</strong>
+                  <span>MIT license &mdash; free forever</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA Banner ===== -->
+    <section class="cta-banner">
+      <div class="geo geo-arch" aria-hidden="true" style="opacity:0.08">
+        <svg viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M180 340 A160 160 0 0 1 20 180 A160 160 0 0 1 180 20" stroke="white" stroke-width="1"/>
+          <rect x="20" y="20" width="80" height="80" stroke="white" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="cta-inner reveal">
+          <h2>READY TO BUILD?</h2>
+          <p>Clone the repo. Start Claude. Have your website live in 15 minutes.</p>
+          <div class="cta-btns">
+            <a href="https://github.com/danlex/claude-free-website" class="btn btn-white" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Clone on GitHub
+            </a>
+            <a href="https://academy.tvl.tech" class="btn btn-outline-white" target="_blank" rel="noopener">TVL Academy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo-link">
+            <img src="https://cdn.prod.website-files.com/66ea9ae1813efc2b2adce14f/67079e31e71560a787dd8b06_logo.svg" alt="TVL Technology" height="44" class="footer-logo-img">
+            <div>
+              <span class="footer-product">The Free Web</span>
+              <span class="footer-by">by TVL Technology</span>
+            </div>
+          </a>
+          <p>Build a free website with AI &mdash; no coding required.</p>
+          <p class="footer-tagline">Where AI meets your needs.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#what-it-builds">What It Builds</a></li>
+            <li><a href="https://github.com/danlex/claude-free-website" target="_blank" rel="noopener">GitHub Repo</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>TVL Technology</h4>
+          <ul>
+            <li><a href="https://tvl.tech" target="_blank" rel="noopener">TVL.tech</a></li>
+            <li><a href="https://academy.tvl.tech" target="_blank" rel="noopener">TVL Academy</a></li>
+            <li><a href="mailto:contact@tvl.technology">contact@tvl.technology</a></li>
+            <li><a href="https://linkedin.com/company/tvl-technology" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TVL Technology. The Free Web is open-source software released under the MIT license.</p>
+        <p>Where AI meets your needs.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

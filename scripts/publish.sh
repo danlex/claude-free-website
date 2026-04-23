@@ -23,7 +23,9 @@ done
 echo ""
 echo "Committing and pushing..."
 cd "$ROOT"
-git add docs/
+# docs/.gitignore intentionally ignores generated output in the template,
+# so publishing must force-add the generated site files.
+git add -f docs/
 
 if git diff --cached --quiet; then
   echo "No changes to publish — docs/ is already up to date."
