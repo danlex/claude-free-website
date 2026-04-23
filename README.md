@@ -229,7 +229,7 @@ https://YOUR_USERNAME.github.io/YOUR_REPO_NAME
 
 GitHub Pages takes **1–2 minutes** to build. Then your site is live, forever, for free.
 
-![Live site](media/10-live.png)
+![Live site](media/10-live.svg)
 
 ---
 
