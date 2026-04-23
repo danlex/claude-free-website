@@ -1,6 +1,6 @@
 # Free Website — Build & Deploy with Claude + GitHub Pages
 
-Build a real, live website for free in ~15 minutes. No coding required.
+Build a real, live website for free in ~60 minutes. No coding required.
 
 **Result:** Your website live at `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME`
 
@@ -113,13 +113,13 @@ Then type `/architect` to start the guided flow:
 
 Claude greets you as your **Website Architect**:
 
-![Architect greeting](media/05-architect-greeting.png)
+![Architect greeting](media/05-architect-greeting.svg)
 
 ```
 👋 Welcome! I'm your Website Architect.
 
 I'll guide you through building a real, live website — completely free.
-No coding required. The whole process takes about 15 minutes.
+No coding required. The whole process takes about 60 minutes.
 
 Here's what I can build for you:
   • Landing page  • Portfolio  • Personal / bio  • Blog  • Company site
